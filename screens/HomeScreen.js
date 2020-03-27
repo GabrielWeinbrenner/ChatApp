@@ -62,7 +62,7 @@ export default class HomeScreen extends React.Component {
 						</MonoText>
 						<View style={styles.nameInput1}>
 							<TextInput
-								style={{ color: '#D0D0C0' }}
+								style={{ color: '#D0D0C0', height: 20 }}
 								onChangeText={password =>
 									this.setState({ password })
 								}
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
 		left: 80,
 		width: 200,
 		height: 30,
+		padding: 0,
 	},
 	nameLabel1: {
 		top: 110,
@@ -130,6 +131,8 @@ const styles = StyleSheet.create({
 		left: 100,
 		width: 230,
 		height: 30,
+		padding: 0,
+
 		position: 'absolute',
 	},
 	container: {
@@ -149,7 +152,10 @@ const styles = StyleSheet.create({
 		height: 344,
 		position: 'absolute',
 	},
-
+	ellipse2: {
+		width: 265,
+		height: 262,
+	},
 	ellipse1Stack: {
 		width: 472,
 		height: 510,
